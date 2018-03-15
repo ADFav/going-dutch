@@ -10,3 +10,4 @@ This project is an app prototype (ie, you can view this on a desktop, but it's i
 - Interface needs to be cleaned up
 - Tessarect scanning is unreliable, need to research a way to upscale image before sending it to b escanned
 - Clicking on text boxes does not do anything yet
+- Photos auto-rotate
