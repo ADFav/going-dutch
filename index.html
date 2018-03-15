@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="utf-16"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="top">
+            <button id="t1" onclick = "splitButton()">➗</button>
+            <button id="t2" onclick = "assignButton()">➡</button>
+        </div>
+        <div id="mid">
+            <div id="scan-view" style = "visibility: visible">
+                <img id="receipt-img" />
+                <img src="img/loading.gif" id = "loading" style="visibility:hidden" />
+            </div>
+            <div id="split-view" style = "visibility: hidden">
+                
+                
+            </div>
+        </div>
+
+        <div id="bottom">
+            <input type="file" accept="image/*" capture="camera" id="cameraUpload" onchange="readImage()" style="display:none">
+            <button id="b1" onclick = "cameraButton()">📷</button>
+            <button id="b2" onclick = "scanButton()">💲</button>
+        </div>
+    </div>
+    <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+</body>
+
+</html>
